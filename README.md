@@ -48,7 +48,7 @@ public class UserRegistration
 			return false;
 
 		// finally ready to register
-		_userService.Register(username);
+		return _userService.Register(username);
 	}
 
 	public bool IsPasswordLongEnough(string password)
@@ -133,14 +133,14 @@ public class UserRegistration
 	public bool Signup(UserCredentials userCredentials)
 	{
 		if(!_hasAvailableUsername
-				.And(_hasValidPassword)
-				.IsSatisfiedBy(userCredentials))
+			.And(_hasValidPassword)
+			.IsSatisfiedBy(userCredentials))
 		{
 			return false;
 		}
 
 		// finally ready to register
-		_userService.Register(username);
+		return _userService.Register(username);
 	}
 }
 ```
