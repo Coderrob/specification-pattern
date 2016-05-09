@@ -113,7 +113,7 @@ public class HasAvailableUsername : CompositeSpecification<UserCredential>
 }
 ```
 
-Thanks to the specification pattern the logic around password validity and username availability. Not to mention making sure no poo related usernames fill the database. 
+Thanks to the specification pattern the logic around password validity and username availability are reusable. Not to mention making sure no poo related usernames fill the database. 
 
 Whelp, these classes are useless unless we actually use them. Let’s see what that looks like now in the UserRegistration class.
 
