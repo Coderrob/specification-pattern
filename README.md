@@ -1,4 +1,4 @@
-# Specification Pattern in C#
+# Specification Pattern in C Sharp
 
 Specification pattern, learn it, love it, and then probably overuse it till you sort out where it applies. The specification pattern is a fantastic pattern for taking a commonly used piece of business logic and wrapping it up into a reusable component.
 
