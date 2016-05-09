@@ -93,8 +93,8 @@ public class HasAvailableUsername : CompositeSpecification<UserCredential>
 	private readonly IBadWordsService _badWordsService;
 
 	public HasValidUsername(
-	IUserService userService,
-	IBadWordsService badWordsService)
+		IUserService userService,
+		IBadWordsService badWordsService)
 	{
 		_userService = userService;
 		_badWordsService = badWordsService;
