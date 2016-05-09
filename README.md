@@ -90,10 +90,14 @@ public class HasValidPassword : CompositeSpecification<UserCredential>
 public class HasAvailableUsername : CompositeSpecification<UserCredential>
 {
 	private readonly IUserService _userService;
+	private readonly IBadWordsService _badWordsService;
 
-	public HasValidUsername(IUserService userService)
+	public HasValidUsername(
+	IUserService userService,
+	IBadWordsService badWordsService)
 	{
 		_userService = userService;
+		_badWordsService = badWordsService;
 	}
 
 	public override bool IsSatisfiedBy(UserCredentials userCredentials)
