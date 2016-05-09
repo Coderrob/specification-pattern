@@ -4,14 +4,14 @@
     {
         private readonly ISpecification<T> _specification;
 
-        public NotSpecification(ISpecification<T> spec)
+        public NotSpecification(ISpecification<T> specification)
         {
-            _specification = spec;
+            _specification = specification;
         }
 
-        public override bool IsSatisfiedBy(T o)
+        public override bool IsSatisfiedBy(T entity)
         {
-            return !_specification.IsSatisfiedBy(o);
+            return !_specification.IsSatisfiedBy(entity);
         }
     }
 }

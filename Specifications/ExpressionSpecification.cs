@@ -14,9 +14,9 @@ namespace Specifications
             _expression = expression;
         }
 
-        public override bool IsSatisfiedBy(T o)
+        public override bool IsSatisfiedBy(T entity)
         {
-            return _expression(o);
+            return _expression(entity);
         }
     }
 }

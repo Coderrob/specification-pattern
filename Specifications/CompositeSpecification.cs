@@ -2,7 +2,7 @@
 {
     public abstract class CompositeSpecification<T> : ISpecification<T>
     {
-        public abstract bool IsSatisfiedBy(T o);
+        public abstract bool IsSatisfiedBy(T entity);
 
         public ISpecification<T> And(ISpecification<T> specification)
         {
