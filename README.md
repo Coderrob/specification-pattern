@@ -151,4 +151,4 @@ public class UserRegistration
 
 Awesome right? 
 
-The best part is now the specification classes can be shared in other areas of code. With the specification classes you can build some very complex business logic around the ability to chain together And / Or / and Not operations with independent pieces of code. Exactly like lincoln logs. But with code.
+With the specification classes you can build some very complex business logic around the ability to chain together And / Or / and Not operations with independent pieces of code. Exactly like lincoln logs. But with code.
